@@ -1,0 +1,32 @@
+[gd_scene load_steps=10 format=3 uid="uid://csmpr0gq5l6ne"]
+
+[ext_resource type="PackedScene" uid="uid://bi3ie63wkrfjk" path="res://Assets/Models/MeshLibraries/contsaw.glb" id="1_2sqex"]
+[ext_resource type="PackedScene" uid="uid://dfw631vxtsog0" path="res://Assets/Models/MeshLibraries/cont.glb" id="1_18j3d"]
+[ext_resource type="PackedScene" uid="uid://bfmlolfjjmrqv" path="res://Assets/Models/MeshLibraries/block.glb" id="2_qat0q"]
+[ext_resource type="PackedScene" uid="uid://ky2wbjvfofqn" path="res://Assets/Models/MeshLibraries/doublesaw.glb" id="4_mm2vc"]
+[ext_resource type="PackedScene" uid="uid://270vsdwx6k80" path="res://Assets/Models/MeshLibraries/ramp_bottom.glb" id="5_jpxld"]
+[ext_resource type="PackedScene" uid="uid://cu4buo8h50e17" path="res://Assets/Models/MeshLibraries/ramp_corner.glb" id="6_o4j0e"]
+[ext_resource type="PackedScene" uid="uid://bqngl1kbh8kxn" path="res://Assets/Models/MeshLibraries/ramp_top.glb" id="7_xuw5t"]
+[ext_resource type="PackedScene" uid="uid://b8gc8qixea3b" path="res://Assets/Models/MeshLibraries/saw.glb" id="8_11r08"]
+[ext_resource type="PackedScene" uid="uid://b61sf1p2uxury" path="res://Assets/Models/MeshLibraries/short.glb" id="9_d4wi0"]
+
+[node name="tiles" type="Node3D"]
+
+[node name="contsaw" parent="." instance=ExtResource("1_2sqex")]
+
+[node name="contin_double" parent="." instance=ExtResource("1_18j3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0, 0)
+
+[node name="block" parent="." instance=ExtResource("2_qat0q")]
+
+[node name="doublesaw" parent="." instance=ExtResource("4_mm2vc")]
+
+[node name="ramp_bottom" parent="." instance=ExtResource("5_jpxld")]
+
+[node name="ramp_corner" parent="." instance=ExtResource("6_o4j0e")]
+
+[node name="ramp_top" parent="." instance=ExtResource("7_xuw5t")]
+
+[node name="saw" parent="." instance=ExtResource("8_11r08")]
+
+[node name="short" parent="." instance=ExtResource("9_d4wi0")]
