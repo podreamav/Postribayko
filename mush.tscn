@@ -373,7 +373,7 @@ radius = 0.710549
 size = Vector3(9, 3, 9)
 
 [node name="mush_enemy" type="CharacterBody3D"]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
 script = ExtResource("1_3p8sl")
 
 [node name="mush_giant" type="Node3D" parent="."]

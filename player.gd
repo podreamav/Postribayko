@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
-var health = 3
+var health = 6
 var dead = false
 var push_strength : float = 5
 var push_height : float = 0.1
@@ -17,6 +17,13 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 func _ready():
 	dead = false
 
+	$DeadHeart.visible = false
+	$DeadHeart2.visible = false
+	$DeadHeart3.visible = false
+	$HalfHeart.visible = false
+	$HalfHeart2.visible = false
+	$HalfHeart3.visible = false
+	
 func _physics_process(delta):
 	
 	
@@ -64,7 +71,7 @@ func _physics_process(delta):
 	
 func player():
 	pass
-	
+
 func _on_hitbox_body_entered(body):
 	if body.has_method("mush"):
 		var mush = body
@@ -100,6 +107,21 @@ func _on_hitbox_body_entered(body):
 func take_damage(damage):
 	health = health - damage
 	print (health)
+
+	
+	if health == 5:
+		$HalfHeart3.visible = true
+	elif health == 4:
+		$DeadHeart3.visible = true
+	elif health == 3:
+		$HalfHeart2.visible = true
+	elif health == 2:
+		$DeadHeart2.visible = true
+	elif health == 1:
+		$HalfHeart.visible = true
+	elif health == 0:
+		$DeadHeart.visible = true
+	
 	if health <= 0 and !dead:
 		death()
 
@@ -108,6 +130,6 @@ func death():
 	dead = true
 	get_tree().change_scene_to_file("res://intro.tscn")
 	
-	
+
 
 		
