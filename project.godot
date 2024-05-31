@@ -29,10 +29,6 @@ window/size/mode=3
 
 project/assembly_name="test"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/MagicaVoxel_Importer_with_Extensions/plugin.cfg")
-
 [filesystem]
 
 import/fbx/enabled=false
@@ -43,6 +39,9 @@ animation_library={
 "gltf/embedded_image_handling": 3
 }
 3d_texture={
+"compress/mode": 3
+}
+texture={
 "compress/mode": 3
 }
 
