@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dv85xo56lxjrl"
+path="res://.godot/imported/good-14.obj-f797f5610e5c65806c36b91573dd04a5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/good-14.obj-f797f5610e5c65806c36b91573dd04a5.mesh"]
+
+source_file="res://Assets/Models/Blocks/Tree/fixed/good-14.obj"
+dest_files=["res://.godot/imported/good-14.obj-f797f5610e5c65806c36b91573dd04a5.mesh", "res://.godot/imported/good-14.obj-f797f5610e5c65806c36b91573dd04a5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
