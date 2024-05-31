@@ -26,7 +26,7 @@ func _physics_process(delta):
 			direction.y = 0 # Ignore the Y-axis for horizontal movement
 			position += direction / speed
 			$mush_giant/AnimationPlayer.play("Run")
-			look_at(Vector3(player.position.x, position.y, player.position.z)) # Look at the player on the same Y level
+			look_at(Vector3(player.position.x, position.y, player.position.z))
 		else:
 			stop_movement()
 			$mush_giant/AnimationPlayer.play("Idle")
