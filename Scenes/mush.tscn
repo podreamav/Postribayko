@@ -386,22 +386,22 @@ bones/0/name = "body"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 bones/0/enabled = true
-bones/0/position = Vector3(0, 0.12, 0)
+bones/0/position = Vector3(0, 0.1, 0)
 bones/0/rotation = Quaternion(0, 0, 0, 1)
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "l"
 bones/1/parent = 0
 bones/1/rest = Transform3D(1, -2.98023e-07, -1.50996e-07, -2.98023e-07, -1, 5.37435e-07, -1.50996e-07, -5.37435e-07, -1, 0.15, 0.0999999, 2.68718e-08)
 bones/1/enabled = true
-bones/1/position = Vector3(0.15, 0.0999999, -0.07)
-bones/1/rotation = Quaternion(0.953717, -1.19412e-07, -1.16812e-07, -0.300706)
+bones/1/position = Vector3(0.15, 0.0999999, 2.68718e-08)
+bones/1/rotation = Quaternion(1, -1.49012e-07, -7.54979e-08, -2.68718e-07)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "r"
 bones/2/parent = 0
 bones/2/rest = Transform3D(1, -2.98023e-07, -1.50996e-07, -2.98023e-07, -1, 5.37435e-07, -1.50996e-07, -5.37435e-07, -1, -0.15, 0.0999999, 2.68718e-08)
 bones/2/enabled = true
-bones/2/position = Vector3(-0.15, 0.0999999, 0.09)
-bones/2/rotation = Quaternion(0.965926, -8.53133e-08, -1.88627e-07, 0.258819)
+bones/2/position = Vector3(-0.15, 0.0999999, 2.68718e-08)
+bones/2/rotation = Quaternion(1, -1.49012e-07, -7.54979e-08, -2.68718e-07)
 bones/2/scale = Vector3(1, 1, 1)
 
 [node name="Untitled" type="MeshInstance3D" parent="mush_giant/Armature_001/Skeleton3D"]
