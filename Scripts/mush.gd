@@ -2,12 +2,15 @@ extends CharacterBody3D
 
 @onready var player = get_parent().get_parent().get_node("player")
 
-var speed = 17
+var speed = 25
 var health = 1
-
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 var dead = false
 var player_in_area = false
+var attacking = false
+
+signal player_hit
 
 
 
@@ -21,17 +24,26 @@ func _physics_process(delta):
 		#player.velocity += direction * push_strength
 	if !dead:
 		$detection_area/CollisionShape3D.disabled = false
+		move_and_slide()
+		velocity.y -= gravity * delta
+		
+		if not is_on_floor():
+			velocity.y -= gravity * delta
+			
+		#else:
+			#velocity.y = 0
 		if player_in_area:
 			var direction = (player.position - position).normalized()
 			direction.y = 0 # Ignore the Y-axis for horizontal movement
 			position += direction / speed
-			$mush_giant/AnimationPlayer.play("Run")
+			#$mush_giant/AnimationPlayer.play("Run")
 			look_at(Vector3(player.position.x, position.y, player.position.z))
-		else:
-			stop_movement()
-			$mush_giant/AnimationPlayer.play("Idle")
+		#else:
+			##stop_movement()
+			#$mush_giant/AnimationPlayer.play("Idle")
+	
 	else:
-		$detection_area/CollisionShape3D.disabled = true
+		$detection_area.disabled = true
 
 func _on_detection_area_body_entered(body):
 	if body.has_method("player"):
@@ -47,9 +59,16 @@ func _on_detection_area_body_exited(body):
 
 func _on_hitbox_area_entered(area):
 	var damage
-	if area.has_method("legs"):
-		damage = 1
-		take_damage(damage)
+	#if area.has_method("mush1"):
+		#damage = 1
+		#take_damage(damage)
+		
+
+#func attack_anim(body):
+	#if body.has_method("mush"):
+		#attacking = true
+		#if attacking == true:
+			#$mush_giant/AnimationPlayer.play("Attack")
 
 func take_damage(damage):
 	health = health - damage
@@ -64,9 +83,10 @@ func death():
 	await $mush_giant/AnimationPlayer.animation_finished
 	queue_free()
 	
-func stop_movement():
-	# Implement logic to stop the mush (e.g., setting velocity to zero)
-	velocity = Vector3.ZERO
+#func stop_movement():
+	## Implement logic to stop the mush
+	#velocity = Vector3.ZERO
+	#move_and_slide()
 
 
 func mush():

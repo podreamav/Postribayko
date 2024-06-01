@@ -4,16 +4,15 @@ extends CharacterBody3D
 @onready var armature = $FlowerKnight/Armature
 @onready var anim_tree = $AnimationTree
 
+signal player_damaged
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+const SPEED = 3.0
+const JUMP_VELOCITY = 4.2
 var health = 6
 var dead = false
 var push_strength : float = 7
-var push_height : float = 0.4
+var push_height : float = 0.2
 var push_length : float = 5
-
-
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -61,56 +60,20 @@ func _physics_process(delta):
 	anim_tree.set("parameters/BlendSpace1D/blend_position", velocity.length() / SPEED)
 
 	move_and_slide()
-	## Add the gravity.
-	#if not is_on_floor():
-		#velocity.y -= gravity * delta
-#
-	## Handle jump.
-	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		#velocity.y = JUMP_VELOCITY
-#
-	## Get the input direction and handle the movement/deceleration.
-	## As good practice, you should replace UI actions with custom gameplay actions.
-	#var input_dir = Vector2(
-	#Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
-	#Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
-#)
-#
-## If there is any input
-	#if input_dir != Vector2.ZERO:
-	## Transform the 2D input direction into 3D
-		#var direction = Vector3(input_dir.x, 0, input_dir.y).normalized()
-		#$FlowerKnight/AnimationPlayer.play("Run")
-	## Adjust direction based on the camera's orientation
-		#if $Camera:
-			#direction = ($Camera.transform.basis * direction).normalized()
-	#
-	## Apply the calculated direction to the velocity
-			#velocity.x = direction.x * SPEED
-			#velocity.z = direction.z * SPEED
-		#else:
-	## Smoothly move velocity towards zero when no input
-			#velocity.x = move_toward(velocity.x, 0, SPEED * delta)
-			#velocity.z = move_toward(velocity.z, 0, SPEED * delta)
-	#else: 
-		#velocity.x = 0
-		#velocity.z = 0
-		##$FlowerKnight/AnimationPlayer.stop()
-		#$FlowerKnight/AnimationPlayer.play("Idle(Left)")
 
-
-	#move_and_slide()
-	
 	# Camera is smoothly moving along player
 	$Camera.position = lerp($Camera.position, position, 0.15)
 
-	
+
 func player():
 	pass
 
 func _on_hitbox_body_entered(body):
 	if body.has_method("mush"):
 		var mush = body
+		body.get_tree()
+		#$AnimationPlayer.stop()
+		#$mush_giant/AnimationPlayer.play("Attack")
 		# Calculate direction vector from mush to player
 		var direction = (global_transform.origin - mush.global_transform.origin).normalized()
 
@@ -143,7 +106,8 @@ func _on_hitbox_body_entered(body):
 func take_damage(damage):
 	health = health - damage
 	print (health)
-
+	get_node("mush_giant")
+	emit_signal("player_damaged")
 	
 	if health == 5:
 		$Health/HalfHeart3.visible = true
@@ -162,9 +126,11 @@ func take_damage(damage):
 		death()
 
 
+
+
 func death():
 	dead = true
-	get_tree().change_scene_to_file("res://intro.tscn")
+	get_tree().change_scene_to_file("res://Scenes/intro.tscn")
 	
 
 

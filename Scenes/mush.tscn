@@ -1,9 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://b34qx2j0ii333"]
+[gd_scene load_steps=22 format=3 uid="uid://b34qx2j0ii333"]
 
 [ext_resource type="Script" path="res://Scripts/mush.gd" id="1_3p8sl"]
 [ext_resource type="Texture2D" uid="uid://bag6pxqepn1be" path="res://Assets/Models/Characters/mush_giant_mush_giant-0.png" id="1_pplpe"]
 [ext_resource type="Texture2D" uid="uid://bbm0utsmfbvgs" path="res://Assets/Models/Characters/mush_giant_mush_giant-1.png" id="2_02seh"]
 [ext_resource type="Texture2D" uid="uid://cxbdrpemr3cv8" path="res://Assets/Models/Characters/mush_giant_mush_giant-2.png" id="3_tdhhx"]
+[ext_resource type="Script" path="res://Scenes/Area3D.gd" id="5_8iqm2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_25sxx"]
 resource_name = "palette"
@@ -367,7 +368,7 @@ _data = {
 [sub_resource type="SphereShape3D" id="SphereShape3D_ahqoi"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_1x776"]
-radius = 0.710549
+radius = 1.846
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n3lpp"]
 size = Vector3(9, 3, 9)
@@ -386,22 +387,22 @@ bones/0/name = "body"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 bones/0/enabled = true
-bones/0/position = Vector3(0, 0.12, 0)
+bones/0/position = Vector3(0, 0.1, 0)
 bones/0/rotation = Quaternion(0, 0, 0, 1)
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "l"
 bones/1/parent = 0
 bones/1/rest = Transform3D(1, -2.98023e-07, -1.50996e-07, -2.98023e-07, -1, 5.37435e-07, -1.50996e-07, -5.37435e-07, -1, 0.15, 0.0999999, 2.68718e-08)
 bones/1/enabled = true
-bones/1/position = Vector3(0.15, 0.0999999, -0.07)
-bones/1/rotation = Quaternion(0.953717, -1.19412e-07, -1.16812e-07, -0.300706)
+bones/1/position = Vector3(0.15, 0.0999999, 2.68718e-08)
+bones/1/rotation = Quaternion(1, -1.49012e-07, -7.54979e-08, -2.68718e-07)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "r"
 bones/2/parent = 0
 bones/2/rest = Transform3D(1, -2.98023e-07, -1.50996e-07, -2.98023e-07, -1, 5.37435e-07, -1.50996e-07, -5.37435e-07, -1, -0.15, 0.0999999, 2.68718e-08)
 bones/2/enabled = true
-bones/2/position = Vector3(-0.15, 0.0999999, 0.09)
-bones/2/rotation = Quaternion(0.965926, -8.53133e-08, -1.88627e-07, 0.258819)
+bones/2/position = Vector3(-0.15, 0.0999999, 2.68718e-08)
+bones/2/rotation = Quaternion(1, -1.49012e-07, -7.54979e-08, -2.68718e-07)
 bones/2/scale = Vector3(1, 1, 1)
 
 [node name="Untitled" type="MeshInstance3D" parent="mush_giant/Armature_001/Skeleton3D"]
@@ -437,6 +438,9 @@ shape = SubResource("SphereShape3D_1x776")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="detection_area"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50397, 0)
 shape = SubResource("BoxShape3D_n3lpp")
+
+[node name="Area3D" type="Area3D" parent="."]
+script = ExtResource("5_8iqm2")
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]

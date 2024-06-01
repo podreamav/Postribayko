@@ -21,14 +21,6 @@
 [ext_resource type="Texture2D" uid="uid://lg0slyfd2o8m" path="res://Assets/Models/Characters/KnightFlower1 (1)_Knight_Flower1-11.png" id="19_jtr38"]
 [ext_resource type="Texture2D" uid="uid://cexm7euwr7ryd" path="res://Assets/Models/Characters/KnightFlower1 (1)_Knight_Flower1-12.png" id="20_n3m7j"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_crbgy"]
-size = Vector3(1, 0.373108, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_vrlx4"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_6le54"]
-size = Vector3(1, 1.57623, 0.615746)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2u7jp"]
 resource_name = "palette.025"
 cull_mode = 2
@@ -2040,6 +2032,14 @@ _data = {
 "Run": SubResource("Animation_ing4c")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_crbgy"]
+size = Vector3(1, 0.373108, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vrlx4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6le54"]
+size = Vector3(1, 1.57623, 0.615746)
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tn6hr"]
 animation = &"Idle(Left)"
 
@@ -2054,7 +2054,7 @@ blend_point_1/pos = 1.0
 min_space = 0.0
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_wq1p7"]
-graph_offset = Vector2(-390.059, -98.2577)
+graph_offset = Vector2(-447.29, -10.7308)
 nodes/BlendSpace1D/node = SubResource("AnimationNodeBlendSpace1D_obdcw")
 nodes/BlendSpace1D/position = Vector2(-54.649, 66.207)
 node_connections = [&"output", 0, &"BlendSpace1D"]
@@ -2062,36 +2062,6 @@ node_connections = [&"output", 0, &"BlendSpace1D"]
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 script = ExtResource("1_h0d5p")
-
-[node name="legs" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.983547, 0)
-script = ExtResource("2_56ap1")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="legs"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.313446, 0)
-shape = SubResource("BoxShape3D_crbgy")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.547333, 0)
-shape = SubResource("BoxShape3D_vrlx4")
-
-[node name="Camera" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.246386)
-top_level = true
-script = ExtResource("2_k0umv")
-
-[node name="Camera_Target" type="SpringArm3D" parent="Camera"]
-transform = Transform3D(1, 0, 0, 0, 0.937458, 0.348098, 0, -0.348098, 0.937458, 0, 2.3481, 4.93746)
-
-[node name="Camera3D" type="Camera3D" parent="Camera/Camera_Target"]
-transform = Transform3D(1, 0, 0, 0, 0.977805, -0.209516, 0, 0.209516, 0.977805, 0, 0, 0)
-fov = 72.6542
-
-[node name="hitbox" type="Area3D" parent="."]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox"]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1.39996, -0.0278397)
-shape = SubResource("BoxShape3D_6le54")
 
 [node name="FlowerKnight" type="Node3D" parent="."]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
@@ -2153,42 +2123,42 @@ bones/7/parent = 0
 bones/7/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 bones/7/enabled = true
 bones/7/position = Vector3(0, 0.5, 0)
-bones/7/rotation = Quaternion(0.0358946, 0.00166085, 0.0437516, 0.998396)
+bones/7/rotation = Quaternion(0.0412967, 0.00238881, 0.0445855, 0.998149)
 bones/7/scale = Vector3(1, 1, 1)
 bones/8/name = "Head"
 bones/8/parent = 7
 bones/8/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 bones/8/enabled = true
 bones/8/position = Vector3(0, 1, 0)
-bones/8/rotation = Quaternion(0.0617125, -0.172298, 0.0169554, 0.982964)
+bones/8/rotation = Quaternion(0.065656, -0.171125, 0.0207089, 0.982841)
 bones/8/scale = Vector3(1, 1, 1)
 bones/9/name = "Arm1_L"
 bones/9/parent = 7
 bones/9/rest = Transform3D(-0.744242, 0.66791, -1.82005e-08, -0.667909, -0.744242, -1.63338e-08, -2.4455e-08, 4.44089e-15, 1, 0.5, 0.9, 0)
 bones/9/enabled = true
 bones/9/position = Vector3(0.5, 0.9, 0)
-bones/9/rotation = Quaternion(0.088307, -0.0169758, 0.913684, -0.396351)
+bones/9/rotation = Quaternion(0.087517, -0.0176969, 0.918087, -0.386192)
 bones/9/scale = Vector3(1, 1, 1)
 bones/10/name = "Arm2_L"
 bones/10/parent = 9
 bones/10/rest = Transform3D(0.744242, 0.66791, -8.95187e-08, -0.66791, 0.744242, 5.83905e-08, 1.05623e-07, 1.63338e-08, 1, 0, 0.524023, -1.60982e-15)
 bones/10/enabled = true
 bones/10/position = Vector3(0, 0.524023, -1.60982e-15)
-bones/10/rotation = Quaternion(0.078447, 0.16774, -0.38133, 0.905702)
+bones/10/rotation = Quaternion(0.093197, 0.160903, -0.382216, 0.905171)
 bones/10/scale = Vector3(1, 1, 1)
 bones/11/name = "Arm1_R"
 bones/11/parent = 7
 bones/11/rest = Transform3D(-0.744242, -0.66791, 1.82005e-08, 0.667909, -0.744242, -1.63338e-08, 2.4455e-08, 4.44089e-15, 1, -0.5, 0.9, 0)
 bones/11/enabled = true
 bones/11/position = Vector3(-0.5, 0.9, 0)
-bones/11/rotation = Quaternion(-0.108242, -0.072756, 0.828021, 0.545318)
+bones/11/rotation = Quaternion(-0.104618, -0.0771439, 0.832459, 0.538624)
 bones/11/scale = Vector3(1, 1, 1)
 bones/12/name = "Arm2_R"
 bones/12/parent = 11
 bones/12/rest = Transform3D(0.744242, -0.66791, 8.95187e-08, 0.66791, 0.744242, 5.83905e-08, -1.05623e-07, 1.63338e-08, 1, 0, 0.524023, -1.60982e-15)
 bones/12/enabled = true
 bones/12/position = Vector3(0, 0.524023, -1.60982e-15)
-bones/12/rotation = Quaternion(0.842716, 0.34909, 0.260578, 0.316331)
+bones/12/rotation = Quaternion(0.845631, 0.35444, 0.242199, 0.317206)
 bones/12/scale = Vector3(1, 1, 1)
 bones/13/name = "Arm2_R.001"
 bones/13/parent = 12
@@ -2206,7 +2176,7 @@ bones/14/rotation = Quaternion(0.707107, 0.707107, 3.95127e-08, 4.74152e-08)
 bones/14/scale = Vector3(1, 1, 1)
 
 [node name="Untitled" type="BoneAttachment3D" parent="FlowerKnight/Armature/Skeleton3D"]
-transform = Transform3D(0.560647, 0.758084, 0.333142, -0.273485, 0.549263, -0.789631, -0.781589, 0.351595, 0.515267, 0.191932, 1.91754, 1.17253)
+transform = Transform3D(0.582679, 0.745185, 0.324321, -0.268476, 0.553157, -0.788631, -0.767076, 0.372446, 0.522377, 0.187887, 1.91371, 1.19435)
 bone_name = "Untitled"
 bone_idx = 14
 
@@ -2271,6 +2241,36 @@ libraries = {
 "": SubResource("AnimationLibrary_33xl2")
 }
 
+[node name="legs" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.983547, 0)
+script = ExtResource("2_56ap1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="legs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.313446, 0)
+shape = SubResource("BoxShape3D_crbgy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.547333, 0)
+shape = SubResource("BoxShape3D_vrlx4")
+
+[node name="Camera" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.246386)
+top_level = true
+script = ExtResource("2_k0umv")
+
+[node name="Camera_Target" type="SpringArm3D" parent="Camera"]
+transform = Transform3D(1, 0, 0, 0, 0.937458, 0.348098, 0, -0.348098, 0.937458, 0, 2.3481, 4.93746)
+
+[node name="Camera3D" type="Camera3D" parent="Camera/Camera_Target"]
+transform = Transform3D(1, 0, 0, 0, 0.977805, -0.209516, 0, 0.209516, 0.977805, 0, 0, 0)
+fov = 72.6542
+
+[node name="hitbox" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1.39996, -0.0278397)
+shape = SubResource("BoxShape3D_6le54")
+
 [node name="Health" type="Node" parent="."]
 
 [node name="FullHeart" type="Sprite2D" parent="Health"]
@@ -2325,6 +2325,6 @@ libraries = {
 }
 tree_root = SubResource("AnimationNodeBlendTree_wq1p7")
 anim_player = NodePath("../FlowerKnight/AnimationPlayer")
-parameters/BlendSpace1D/blend_position = 0
+parameters/BlendSpace1D/blend_position = 0.0
 
 [connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
