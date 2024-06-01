@@ -71,9 +71,9 @@ func player():
 func _on_hitbox_body_entered(body):
 	if body.has_method("mush"):
 		var mush = body
-		body.get_tree()
-		#$AnimationPlayer.stop()
-		#$mush_giant/AnimationPlayer.play("Attack")
+		mush.play_attack()
+		
+		
 		# Calculate direction vector from mush to player
 		var direction = (global_transform.origin - mush.global_transform.origin).normalized()
 
