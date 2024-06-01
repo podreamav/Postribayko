@@ -3,16 +3,19 @@
 [ext_resource type="Script" path="res://Scripts/pushable_block.gd" id="1_53c47"]
 [ext_resource type="ArrayMesh" uid="uid://b2nt85mc4ndry" path="res://Assets/Models/Blocks/kashtanvox.obj" id="1_viyh4"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ar5ps"]
-size = Vector3(1.20313, 0.655777, 1.30322)
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bhxoy"]
+height = 0.791669
+radius = 0.415524
 
 [node name="pushable_block" type="CharacterBody3D"]
+transform = Transform3D(0.7652, 0, 0, 0, 0.7652, 0, 0, 0, 0.7652, 0, 0, 0)
 script = ExtResource("1_53c47")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.392928, 0)
+transform = Transform3D(0.812412, 0, 0, 0, 0.812412, 0, 0, 0, 0.812412, 0, -0.344374, 0)
 mesh = ExtResource("1_viyh4")
+metadata/_edit_group_ = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.101563, 0.668199, -0.151611)
-shape = SubResource("BoxShape3D_ar5ps")
+transform = Transform3D(1.57831, 0, 0, 0, 1.57831, 0, 0, 0, 1.57831, -0.126952, 0.622501, -0.129506)
+shape = SubResource("CylinderShape3D_bhxoy")
