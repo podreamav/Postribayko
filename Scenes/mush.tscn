@@ -1,10 +1,9 @@
-[gd_scene load_steps=22 format=3 uid="uid://b34qx2j0ii333"]
+[gd_scene load_steps=21 format=3 uid="uid://b34qx2j0ii333"]
 
 [ext_resource type="Script" path="res://Scripts/mush.gd" id="1_3p8sl"]
 [ext_resource type="Texture2D" uid="uid://bag6pxqepn1be" path="res://Assets/Models/Characters/mush_giant_mush_giant-0.png" id="1_pplpe"]
 [ext_resource type="Texture2D" uid="uid://bbm0utsmfbvgs" path="res://Assets/Models/Characters/mush_giant_mush_giant-1.png" id="2_02seh"]
 [ext_resource type="Texture2D" uid="uid://cxbdrpemr3cv8" path="res://Assets/Models/Characters/mush_giant_mush_giant-2.png" id="3_tdhhx"]
-[ext_resource type="Script" path="res://Scenes/Area3D.gd" id="5_8iqm2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_25sxx"]
 resource_name = "palette"
@@ -438,9 +437,6 @@ shape = SubResource("SphereShape3D_1x776")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="detection_area"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50397, 0)
 shape = SubResource("BoxShape3D_n3lpp")
-
-[node name="Area3D" type="Area3D" parent="."]
-script = ExtResource("5_8iqm2")
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]

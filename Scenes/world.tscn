@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c4hxjjqw7jav" path="res://Scenes/player.tscn" id="2_yvjca"]
 [ext_resource type="PackedScene" uid="uid://b61sf1p2uxury" path="res://Assets/Models/MeshLibraries/short.glb" id="4_xcvw4"]
 [ext_resource type="PackedScene" uid="uid://cldvu2r78kyq7" path="res://Scenes/coin.tscn" id="5_yddm8"]
-[ext_resource type="MeshLibrary" uid="uid://dxolhj8p351f1" path="res://Assets/1.tres" id="7_caiv4"]
+[ext_resource type="MeshLibrary" uid="uid://dxolhj8p351f1" path="res://Assets/1_REMOTE_226.tres" id="7_caiv4"]
 [ext_resource type="ArrayMesh" uid="uid://dr442npl25okp" path="res://Assets/Models/Blocks/Tree/fixed/bad-0.obj" id="7_jxtk3"]
 [ext_resource type="PackedScene" uid="uid://c5v56yslfjh8o" path="res://Scenes/pushable_block.tscn" id="8_cgev0"]
 [ext_resource type="PackedScene" uid="uid://b34qx2j0ii333" path="res://Scenes/mush.tscn" id="8_ci3hs"]
@@ -95,7 +95,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, -68)
 [node name="Pushable_Blocks" type="Node3D" parent="."]
 
 [node name="pushable_block" parent="Pushable_Blocks" instance=ExtResource("8_cgev0")]
-transform = Transform3D(0.7652, 0, 0, 0, 0.7652, 0, 0, 0, 0.7652, -1.03596, 2.02515, -50.4868)
+transform = Transform3D(0.7652, 0, 0, 0, 0.7652, 0, 0, 0, 0.7652, -1.03596, 2.02515, -40.2946)
 
 [node name="Coins" type="Node3D" parent="."]
 
@@ -115,9 +115,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75793, 2.66443, -36.4777)
 
 [node name="Player" parent="." instance=ExtResource("2_yvjca")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 3.77684, 3.91437, -46.7181)
-
-[node name="Bad" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.82, 5.345, 0)
 
 [node name="Bad" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.82, 5.345, 0)
@@ -216,6 +213,9 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
 mesh = ExtResource("25_ssx8a")
 skeleton = NodePath("../..")
+
+[node name="Bad2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.82, 5.345, 0)
 
 [node name="Good" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38, 0, 0)

@@ -45,7 +45,7 @@ func _physics_process(delta):
 		elif mush_is_attacking:
 			$mush_giant/AnimationPlayer.play("Attack")
 		else:
-			stop_movement()
+			#stop_movement()
 			$mush_giant/AnimationPlayer.play("Idle")
 	else:
 		$detection_area.disabled = true
