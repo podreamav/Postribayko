@@ -8,8 +8,15 @@ var health = 1
 
 var dead = false
 var player_in_area = false
+var mush_is_attacking = false
 
-
+func play_attack():
+	mush_is_attacking = true
+	await get_tree().create_timer(1.4583).timeout
+	
+	mush_is_attacking = false
+	#print("hello from attack func")
+	#$mush_giant/AnimationPlayer.play("Attack")
 
 func _ready():
 	dead = false
@@ -26,7 +33,9 @@ func _physics_process(delta):
 			direction.y = 0 # Ignore the Y-axis for horizontal movement
 			position += direction / speed
 			$mush_giant/AnimationPlayer.play("Run")
-			look_at(Vector3(player.position.x, position.y, player.position.z)) # Look at the player on the same Y level
+			look_at(Vector3(player.position.x, position.y, player.position.z))
+		elif mush_is_attacking:
+			$mush_giant/AnimationPlayer.play("Attack")
 		else:
 			stop_movement()
 			$mush_giant/AnimationPlayer.play("Idle")

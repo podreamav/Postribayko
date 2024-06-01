@@ -85,13 +85,16 @@ metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="Enemies" type="Node3D" parent="."]
 
+[node name="mush_enemy" parent="Enemies" instance=ExtResource("8_ci3hs")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.0251608, 2.01273, -47.5257)
+
 [node name="Blocks" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, -68)
 
 [node name="Pushable_Blocks" type="Node3D" parent="."]
 
 [node name="pushable_block" parent="Pushable_Blocks" instance=ExtResource("8_cgev0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5385, 2.09211, -49.4024)
+transform = Transform3D(0.7652, 0, 0, 0, 0.7652, 0, 0, 0, 0.7652, -1.03596, 2.02515, -50.4868)
 
 [node name="Coins" type="Node3D" parent="."]
 
@@ -106,11 +109,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.44408, 4.60317, -50.063)
 [node name="short" parent="Kostili" instance=ExtResource("4_xcvw4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.04386, 3.70029, -53.0536)
 
+[node name="short2" parent="Kostili" instance=ExtResource("4_xcvw4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.04386, 3.70029, -47.0536)
+
 [node name="Player" parent="." instance=ExtResource("2_yvjca")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 3.49091, 4.95023, -57.294)
 
-[node name="mush_enemy" parent="." instance=ExtResource("8_ci3hs")]
-transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.0251608, 2.01273, -30.7197)
+[node name="Bad" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.82, 5.345, 0)
 
 [node name="Bad" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.82, 5.345, 0)
