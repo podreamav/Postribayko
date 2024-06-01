@@ -18,6 +18,15 @@ func _input(event):
 		var yRot = (rotation.y - event.relative.x / 1000 * sensitivity)
 		rotation = Vector3(xRot, yRot, 0)
 	
-	
+	if event is InputEventMouseButton:
+			if event.button_index == MOUSE_BUTTON_WHEEL_UP:
+				if get_node("Camera_Target").spring_length < 5:
+					get_node("Camera_Target").spring_length += 0.2
+					
+
+			if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
+				if get_node("Camera_Target").spring_length > 2:
+					get_node("Camera_Target").spring_length -= 0.2
+					
 
 	
