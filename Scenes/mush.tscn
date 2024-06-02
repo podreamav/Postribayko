@@ -370,7 +370,7 @@ _data = {
 radius = 1.846
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n3lpp"]
-size = Vector3(9, 3, 9)
+size = Vector3(10.7557, 3, 11.9507)
 
 [node name="mush_enemy" type="CharacterBody3D"]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
@@ -435,7 +435,7 @@ shape = SubResource("SphereShape3D_1x776")
 [node name="detection_area" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="detection_area"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50397, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.877869, 1.50397, -1.47534)
 shape = SubResource("BoxShape3D_n3lpp")
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]

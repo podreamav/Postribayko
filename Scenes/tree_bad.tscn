@@ -1,0 +1,99 @@
+[gd_scene load_steps=20 format=3 uid="uid://ci0qy2vodbsrt"]
+
+[ext_resource type="ArrayMesh" uid="uid://dr442npl25okp" path="res://Assets/Models/Blocks/Tree/fixed/bad-0.obj" id="1_ox7lq"]
+[ext_resource type="ArrayMesh" uid="uid://ctexoxkatjke2" path="res://Assets/Models/Blocks/Tree/fixed/bad-1.obj" id="2_8a2vh"]
+[ext_resource type="ArrayMesh" uid="uid://bhrv6ei1bwckx" path="res://Assets/Models/Blocks/Tree/fixed/bad-2.obj" id="3_uynt6"]
+[ext_resource type="ArrayMesh" uid="uid://2oraslsg1x6c" path="res://Assets/Models/Blocks/Tree/fixed/bad-3.obj" id="4_kqv4m"]
+[ext_resource type="ArrayMesh" uid="uid://bb5p1gqvvowy4" path="res://Assets/Models/Blocks/Tree/fixed/bad-4.obj" id="5_iik5o"]
+[ext_resource type="ArrayMesh" uid="uid://dwxq6sjqmc3ng" path="res://Assets/Models/Blocks/Tree/fixed/bad-5.obj" id="6_yjc2b"]
+[ext_resource type="ArrayMesh" uid="uid://c16vxsex3p518" path="res://Assets/Models/Blocks/Tree/fixed/bad-6.obj" id="7_mimoj"]
+[ext_resource type="ArrayMesh" uid="uid://cibdf74nqkx05" path="res://Assets/Models/Blocks/Tree/fixed/bad-7.obj" id="8_6x7e6"]
+[ext_resource type="ArrayMesh" uid="uid://by3io8t6u1l18" path="res://Assets/Models/Blocks/Tree/fixed/bad-8.obj" id="9_m7xke"]
+[ext_resource type="ArrayMesh" uid="uid://n2ai8iqp7ws7" path="res://Assets/Models/Blocks/Tree/fixed/bad-9.obj" id="10_yurpx"]
+[ext_resource type="ArrayMesh" uid="uid://wl58ua7otvax" path="res://Assets/Models/Blocks/Tree/fixed/bad-10.obj" id="11_yafoy"]
+[ext_resource type="ArrayMesh" uid="uid://c6fkgwy6kd84e" path="res://Assets/Models/Blocks/Tree/fixed/bad-11.obj" id="12_qqt5a"]
+[ext_resource type="ArrayMesh" uid="uid://cgtk706tgn737" path="res://Assets/Models/Blocks/Tree/fixed/bad-12.obj" id="13_t0s40"]
+[ext_resource type="ArrayMesh" uid="uid://tjy8djf5g38j" path="res://Assets/Models/Blocks/Tree/fixed/bad-13.obj" id="14_g1pdh"]
+[ext_resource type="ArrayMesh" uid="uid://cmoqa5jwojhjg" path="res://Assets/Models/Blocks/Tree/fixed/bad-14.obj" id="15_52bqa"]
+[ext_resource type="ArrayMesh" uid="uid://dp5m55dttbrd6" path="res://Assets/Models/Blocks/Tree/fixed/bad-15.obj" id="16_jojpo"]
+[ext_resource type="ArrayMesh" uid="uid://clj31q63pl7fe" path="res://Assets/Models/Blocks/Tree/fixed/bad-16.obj" id="17_jvsv1"]
+[ext_resource type="ArrayMesh" uid="uid://blmt5lpb0vyhe" path="res://Assets/Models/Blocks/Tree/fixed/bad-17.obj" id="18_y4idt"]
+[ext_resource type="ArrayMesh" uid="uid://4wm8pyq6kip7" path="res://Assets/Models/Blocks/Tree/fixed/bad-18.obj" id="19_wbj6v"]
+
+[node name="Tree_Bad" type="CharacterBody3D"]
+
+[node name="Bad-0" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("1_ox7lq")
+
+[node name="Bad-1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("2_8a2vh")
+
+[node name="Bad-2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("3_uynt6")
+
+[node name="Bad-3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("4_kqv4m")
+
+[node name="Bad-4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("5_iik5o")
+
+[node name="Bad-5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("6_yjc2b")
+
+[node name="Bad-6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("7_mimoj")
+
+[node name="Bad-7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("8_6x7e6")
+
+[node name="Bad-8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("9_m7xke")
+
+[node name="Bad-9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("10_yurpx")
+
+[node name="Bad-10" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("11_yafoy")
+
+[node name="Bad-11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("12_qqt5a")
+
+[node name="Bad-12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("13_t0s40")
+
+[node name="Bad-13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("14_g1pdh")
+
+[node name="Bad-14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("15_52bqa")
+
+[node name="Bad-15" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("16_jojpo")
+
+[node name="Bad-16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("17_jvsv1")
+
+[node name="Bad-17" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("18_y4idt")
+
+[node name="Bad-18" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.327385, -1.19209e-07, -0.599274)
+mesh = ExtResource("19_wbj6v")

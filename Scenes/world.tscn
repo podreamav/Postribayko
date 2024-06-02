@@ -1,49 +1,12 @@
-[gd_scene load_steps=48 format=3 uid="uid://bl01b1n0c1ld0"]
+[gd_scene load_steps=11 format=3 uid="uid://bl01b1n0c1ld0"]
 
 [ext_resource type="PackedScene" uid="uid://c4hxjjqw7jav" path="res://Scenes/player.tscn" id="2_yvjca"]
 [ext_resource type="PackedScene" uid="uid://b61sf1p2uxury" path="res://Assets/Models/MeshLibraries/short.glb" id="4_xcvw4"]
 [ext_resource type="PackedScene" uid="uid://cldvu2r78kyq7" path="res://Scenes/coin.tscn" id="5_yddm8"]
-[ext_resource type="MeshLibrary" uid="uid://dxolhj8p351f1" path="res://Assets/1_LOCAL_226.tres" id="7_caiv4"]
-[ext_resource type="ArrayMesh" uid="uid://dr442npl25okp" path="res://Assets/Models/Blocks/Tree/fixed/bad-0.obj" id="7_jxtk3"]
+[ext_resource type="MeshLibrary" uid="uid://dxolhj8p351f1" path="res://Assets/1_BASE_226.tres" id="7_caiv4"]
+[ext_resource type="PackedScene" uid="uid://dvtgnnp7kcujj" path="res://Scenes/tree_good.tscn" id="7_rbflr"]
 [ext_resource type="PackedScene" uid="uid://c5v56yslfjh8o" path="res://Scenes/pushable_block.tscn" id="8_cgev0"]
 [ext_resource type="PackedScene" uid="uid://b34qx2j0ii333" path="res://Scenes/mush.tscn" id="8_ci3hs"]
-[ext_resource type="ArrayMesh" uid="uid://ctexoxkatjke2" path="res://Assets/Models/Blocks/Tree/fixed/bad-1.obj" id="8_gq62u"]
-[ext_resource type="ArrayMesh" uid="uid://bhrv6ei1bwckx" path="res://Assets/Models/Blocks/Tree/fixed/bad-2.obj" id="9_pd145"]
-[ext_resource type="ArrayMesh" uid="uid://2oraslsg1x6c" path="res://Assets/Models/Blocks/Tree/fixed/bad-3.obj" id="10_0ewol"]
-[ext_resource type="ArrayMesh" uid="uid://bb5p1gqvvowy4" path="res://Assets/Models/Blocks/Tree/fixed/bad-4.obj" id="11_wekyb"]
-[ext_resource type="ArrayMesh" uid="uid://dwxq6sjqmc3ng" path="res://Assets/Models/Blocks/Tree/fixed/bad-5.obj" id="12_37mo7"]
-[ext_resource type="ArrayMesh" uid="uid://c16vxsex3p518" path="res://Assets/Models/Blocks/Tree/fixed/bad-6.obj" id="13_pgx84"]
-[ext_resource type="ArrayMesh" uid="uid://cibdf74nqkx05" path="res://Assets/Models/Blocks/Tree/fixed/bad-7.obj" id="14_w7gfv"]
-[ext_resource type="ArrayMesh" uid="uid://by3io8t6u1l18" path="res://Assets/Models/Blocks/Tree/fixed/bad-8.obj" id="15_jwdyg"]
-[ext_resource type="ArrayMesh" uid="uid://n2ai8iqp7ws7" path="res://Assets/Models/Blocks/Tree/fixed/bad-9.obj" id="16_pb7ss"]
-[ext_resource type="ArrayMesh" uid="uid://wl58ua7otvax" path="res://Assets/Models/Blocks/Tree/fixed/bad-10.obj" id="17_y3ev6"]
-[ext_resource type="ArrayMesh" uid="uid://c6fkgwy6kd84e" path="res://Assets/Models/Blocks/Tree/fixed/bad-11.obj" id="18_b8kv0"]
-[ext_resource type="ArrayMesh" uid="uid://cgtk706tgn737" path="res://Assets/Models/Blocks/Tree/fixed/bad-12.obj" id="19_dnfk8"]
-[ext_resource type="ArrayMesh" uid="uid://tjy8djf5g38j" path="res://Assets/Models/Blocks/Tree/fixed/bad-13.obj" id="20_vv45t"]
-[ext_resource type="ArrayMesh" uid="uid://cmoqa5jwojhjg" path="res://Assets/Models/Blocks/Tree/fixed/bad-14.obj" id="21_ydcm2"]
-[ext_resource type="ArrayMesh" uid="uid://dp5m55dttbrd6" path="res://Assets/Models/Blocks/Tree/fixed/bad-15.obj" id="22_frmbi"]
-[ext_resource type="ArrayMesh" uid="uid://clj31q63pl7fe" path="res://Assets/Models/Blocks/Tree/fixed/bad-16.obj" id="23_ou42u"]
-[ext_resource type="ArrayMesh" uid="uid://blmt5lpb0vyhe" path="res://Assets/Models/Blocks/Tree/fixed/bad-17.obj" id="24_51mt6"]
-[ext_resource type="ArrayMesh" uid="uid://4wm8pyq6kip7" path="res://Assets/Models/Blocks/Tree/fixed/bad-18.obj" id="25_ssx8a"]
-[ext_resource type="ArrayMesh" uid="uid://dc78p6bfxjyjp" path="res://Assets/Models/Blocks/Tree/fixed/good-0.obj" id="26_e42kc"]
-[ext_resource type="ArrayMesh" uid="uid://bf6gmqlpe2r3d" path="res://Assets/Models/Blocks/Tree/fixed/good-1.obj" id="27_ato5k"]
-[ext_resource type="ArrayMesh" uid="uid://fxgjrm6gqpt3" path="res://Assets/Models/Blocks/Tree/fixed/good-2.obj" id="28_jjord"]
-[ext_resource type="ArrayMesh" uid="uid://by0k07l7wnt6o" path="res://Assets/Models/Blocks/Tree/fixed/good-3.obj" id="29_c1ue3"]
-[ext_resource type="ArrayMesh" uid="uid://12sodx5e68i6" path="res://Assets/Models/Blocks/Tree/fixed/good-4.obj" id="30_1lehx"]
-[ext_resource type="ArrayMesh" uid="uid://8uvxy2suvugx" path="res://Assets/Models/Blocks/Tree/fixed/good-5.obj" id="31_xv1wf"]
-[ext_resource type="ArrayMesh" uid="uid://hrvx5hj8htsc" path="res://Assets/Models/Blocks/Tree/fixed/good-6.obj" id="32_xwoo1"]
-[ext_resource type="ArrayMesh" uid="uid://3xdgtccbo06n" path="res://Assets/Models/Blocks/Tree/fixed/good-7.obj" id="33_ianus"]
-[ext_resource type="ArrayMesh" uid="uid://co4iwjvgqlhly" path="res://Assets/Models/Blocks/Tree/fixed/good-8.obj" id="34_l7xdj"]
-[ext_resource type="ArrayMesh" uid="uid://cd5tdoy1jn48m" path="res://Assets/Models/Blocks/Tree/fixed/good-9.obj" id="35_ewdao"]
-[ext_resource type="ArrayMesh" uid="uid://d1f0i6e41yk3p" path="res://Assets/Models/Blocks/Tree/fixed/good-10.obj" id="36_4w2p2"]
-[ext_resource type="ArrayMesh" uid="uid://bkndnyveir712" path="res://Assets/Models/Blocks/Tree/fixed/good-11.obj" id="37_gihit"]
-[ext_resource type="ArrayMesh" uid="uid://b6vsut12l5nc5" path="res://Assets/Models/Blocks/Tree/fixed/good-12.obj" id="38_3igep"]
-[ext_resource type="ArrayMesh" uid="uid://jd4a0ktyq31u" path="res://Assets/Models/Blocks/Tree/fixed/good-13.obj" id="39_jnpd2"]
-[ext_resource type="ArrayMesh" uid="uid://dv85xo56lxjrl" path="res://Assets/Models/Blocks/Tree/fixed/good-14.obj" id="40_0us44"]
-[ext_resource type="ArrayMesh" uid="uid://cy4l8mrnpa841" path="res://Assets/Models/Blocks/Tree/fixed/good-15.obj" id="41_244b2"]
-[ext_resource type="ArrayMesh" uid="uid://1oj2pvnc67cv" path="res://Assets/Models/Blocks/Tree/fixed/good-16.obj" id="42_3bngm"]
-[ext_resource type="ArrayMesh" uid="uid://csyq88mik7116" path="res://Assets/Models/Blocks/Tree/fixed/good-17.obj" id="43_rwvvb"]
-[ext_resource type="ArrayMesh" uid="uid://gd6abvfhjuw5" path="res://Assets/Models/Blocks/Tree/fixed/good-18.obj" id="44_5e4m4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hfsf8"]
 sky_top_color = Color(0.2, 0.619608, 1, 1)
@@ -69,28 +32,13 @@ volumetric_fog_density = 0.01
 
 [node name="World" type="Node3D"]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.0148592, 33.914, -17.1831)
-shadow_enabled = true
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_v5j03")
-
 [node name="GridMap" type="GridMap" parent="."]
 transform = Transform3D(0.8, 0, 0, 0, 0.415, 0, 0, 0, 0.8, 0, 0, 0)
 mesh_library = ExtResource("7_caiv4")
 data = {
-"cells": PackedInt32Array(0, 65532, 0, 65535, 65532, 0, 65534, 65532, 0, 2, 65531, 0, 1, 65531, 0, 0, 65531, 0, 3, 65531, 0, 3, 65530, 0, 2, 65530, 0, 2, 65529, 0, 1, 65529, 0, 1, 65530, 0, 0, 65530, 0, 0, 65529, 0, 2, 65528, 0, 1, 65528, 0, 1, 65527, 0, 0, 65527, 0, 65534, 65527, 0, 65534, 65528, 0, 65535, 65528, 0, 65535, 65529, 0, 0, 65528, 0, 65534, 65529, 0, 65535, 65526, 0, 65534, 65530, 0, 65534, 65531, 0, 65535, 65531, 0, 0, 65526, 0, 0, 65525, 0, 65535, 65525, 0, 2, 65527, 0, 3, 65527, 0, 3, 65526, 0, 4, 65526, 0, 4, 65525, 0, 3, 65523, 0, 2, 65524, 0, 2, 65525, 0, 1, 65525, 0, 1, 65526, 0, 3, 65525, 0, 1, 65524, 0, 2, 65526, 0, 65535, 65530, 0, 0, 65524, 0, 65535, 65524, 0, 2, 65523, 0, 2, 65522, 0, 2, 65521, 0, 1, 65521, 0, 0, 65521, 0, 65535, 65522, 0, 65535, 65523, 0, 65534, 65524, 0, 1, 65523, 0, 0, 65522, 0, 65535, 65521, 0, 65534, 65522, 0, 65534, 65523, 0, 65533, 65524, 0, 65533, 65525, 0, 65533, 65526, 0, 65533, 65527, 0, 65533, 65528, 0, 65533, 65529, 0, 65533, 65530, 0, 65533, 65531, 0, 65532, 65528, 0, 65532, 65529, 0, 65532, 65530, 0, 65531, 65527, 0, 65532, 65525, 0, 3, 65528, 0, 4, 65528, 0, 4, 65527, 0, 5, 65527, 0, 5, 65526, 0, 3, 65524, 0, 4, 65530, 0, 5, 65529, 0, 4, 65529, 0, 5, 65528, 0, 3, 65529, 0, 0, 65523, 0, 1, 65522, 0, 1, 65520, 0, 1, 65519, 0, 0, 65519, 0, 0, 65520, 0, 65535, 65520, 0, 0, 65518, 0, 65535, 65518, 0, 65535, 65519, 0, 3, 65521, 0, 3, 65518, 0, 2, 65518, 0, 1, 65517, 0, 1, 65518, 0, 0, 65517, 0, 2, 65517, 0, 1, 65516, 0, 3, 65515, 0, 2, 65515, 0, 2, 65516, 0, 2, 65514, 0, 2, 65513, 0, 1, 65513, 0, 0, 65513, 0, 0, 65514, 0, 0, 65515, 0, 0, 65516, 0, 65535, 65513, 0, 65534, 65514, 0, 65534, 65515, 0, 65535, 65516, 0, 65535, 65515, 0, 65535, 65514, 0, 65534, 65516, 0, 65535, 65517, 0, 1, 65515, 0, 1, 65514, 0, 1, 65512, 0, 65532, 65526, 0, 65532, 65527, 0, 3, 65514, 0, 3, 65513, 0, 2, 65512, 0, 0, 65512, 0, 1, 65511, 0, 65535, 65512, 0, 2, 65511, 0, 0, 65510, 0, 1, 65510, 0, 2, 65510, 0, 0, 65509, 0, 65535, 65509, 0, 65535, 65510, 0, 3, 65511, 0, 3, 65510, 0, 0, 65511, 0, 3, 65512, 0, 65534, 65510, 0, 65534, 65511, 0, 65535, 65511, 0, 2, 65509, 0, 1, 65509, 0, 0, 65508, 0, 1, 65508, 0, 2, 65508, 0, 131069, 65510, 0, 131069, 65511, 0, 131068, 65511, 0, 196605, 65512, 8, 196604, 65512, 8, 65534, 65512, 8, 65534, 65513, 8, 196603, 65511, 8, 196603, 65510, 8, 131068, 65510, 0, 196604, 65509, 8, 196605, 65509, 8, 2, 65507, 0, 0, 65506, 0, 1, 65506, 0, 2, 65506, 0, 0, 65507, 0, 1, 65507, 0, 1, 65505, 0, 0, 65505, 0, 65536, 65504, 8, 65537, 65504, 8, 65538, 65505, 8, 65536, 65503, 0, 65537, 65503, 0, 65538, 65504, 0, 65538, 65503, 0, 2, 65505, 0, 0, 65504, 0, 2, 65504, 0, 2, 65503, 0, 0, 65503, 0, 1, 65503, 0, 65534, 65525, 0, 65534, 65526, 0, 65535, 65527, 0, 2, 65520, 0, 2, 65519, 0, 3, 65517, 0, 3, 65519, 0)
+"cells": PackedInt32Array(0, 65532, 0, 65535, 65532, 0, 65534, 65532, 0, 2, 65531, 0, 1, 65531, 0, 0, 65531, 0, 3, 65531, 0, 3, 65530, 0, 2, 65530, 0, 2, 65529, 0, 1, 65529, 0, 1, 65530, 0, 0, 65530, 0, 0, 65529, 0, 2, 65528, 0, 1, 65528, 0, 1, 65527, 0, 0, 65527, 0, 65534, 65527, 0, 65534, 65528, 0, 65535, 65528, 0, 65535, 65529, 0, 0, 65528, 0, 65534, 65529, 0, 65535, 65526, 0, 65534, 65530, 0, 65534, 65531, 0, 65535, 65531, 0, 0, 65526, 0, 0, 65525, 0, 65535, 65525, 0, 2, 65527, 0, 3, 65527, 0, 3, 65526, 0, 4, 65526, 0, 4, 65525, 0, 3, 65523, 0, 2, 65524, 0, 2, 65525, 0, 1, 65525, 0, 1, 65526, 0, 3, 65525, 0, 1, 65524, 0, 2, 65526, 0, 65535, 65530, 0, 0, 65524, 0, 65535, 65524, 0, 2, 65523, 0, 2, 65522, 0, 2, 65521, 0, 1, 65521, 0, 0, 65521, 0, 65535, 65522, 0, 65535, 65523, 0, 65534, 65524, 0, 1, 65523, 0, 0, 65522, 0, 65535, 65521, 0, 65534, 65522, 0, 65534, 65523, 0, 65533, 65524, 0, 65533, 65525, 0, 65533, 65526, 0, 65533, 65527, 0, 65533, 65528, 0, 65533, 65529, 0, 65533, 65530, 0, 65533, 65531, 0, 65532, 65528, 0, 65532, 65529, 0, 65532, 65530, 0, 65531, 65527, 0, 65532, 65525, 0, 3, 65528, 0, 4, 65528, 0, 4, 65527, 0, 5, 65527, 0, 5, 65526, 0, 3, 65524, 0, 4, 65530, 0, 5, 65529, 0, 4, 65529, 0, 5, 65528, 0, 3, 65529, 0, 0, 65523, 0, 1, 65522, 0, 1, 65520, 0, 1, 65519, 0, 0, 65519, 0, 0, 65520, 0, 65535, 65520, 0, 0, 65518, 0, 65535, 65518, 0, 65535, 65519, 0, 3, 65521, 0, 3, 65518, 0, 2, 65518, 0, 1, 65517, 0, 1, 65518, 0, 0, 65517, 0, 2, 65517, 0, 1, 65516, 0, 3, 65515, 0, 2, 65515, 0, 2, 65516, 0, 2, 65514, 0, 2, 65513, 0, 1, 65513, 0, 0, 65513, 0, 0, 65514, 0, 0, 65515, 0, 0, 65516, 0, 65535, 65513, 0, 65534, 65514, 0, 65534, 65515, 0, 65535, 65516, 0, 65535, 65515, 0, 65535, 65514, 0, 65534, 65516, 0, 65535, 65517, 0, 1, 65515, 0, 1, 65514, 0, 1, 65512, 0, 65532, 65526, 0, 65532, 65527, 0, 3, 65514, 0, 3, 65513, 0, 2, 65512, 0, 0, 65512, 0, 1, 65511, 0, 65535, 65512, 0, 2, 65511, 0, 0, 65510, 0, 1, 65510, 0, 2, 65510, 0, 0, 65509, 0, 65535, 65509, 0, 65535, 65510, 0, 3, 65511, 0, 3, 65510, 0, 0, 65511, 0, 3, 65512, 0, 65534, 65510, 0, 65534, 65511, 0, 65535, 65511, 0, 2, 65509, 0, 1, 65509, 0, 0, 65508, 0, 1, 65508, 0, 2, 65508, 0, 131069, 65510, 0, 131069, 65511, 0, 131068, 65511, 0, 196605, 65512, 8, 196604, 65512, 8, 65534, 65512, 8, 65534, 65513, 8, 196603, 65511, 8, 196603, 65510, 8, 131068, 65510, 0, 196604, 65509, 8, 196605, 65509, 8, 2, 65507, 0, 0, 65506, 0, 1, 65506, 0, 2, 65506, 0, 0, 65507, 0, 1, 65507, 0, 1, 65505, 0, 0, 65505, 0, 65536, 65504, 8, 65537, 65504, 8, 65538, 65505, 8, 65536, 65503, 0, 65537, 65503, 0, 65538, 65504, 0, 65538, 65503, 0, 2, 65505, 0, 0, 65504, 0, 2, 65504, 0, 2, 65503, 0, 0, 65503, 0, 1, 65503, 0, 65534, 65525, 0, 65534, 65526, 0, 65535, 65527, 0, 2, 65520, 0, 2, 65519, 0, 3, 65517, 0, 3, 65519, 0, 3, 65509, 0, 3, 65508, 0, 3, 65507, 0, 4, 65507, 0, 4, 65508, 0, 4, 65509, 0, 4, 65510, 0, 4, 65511, 0, 5, 65511, 0, 5, 65510, 0, 5, 65509, 0, 5, 65508, 0, 5, 65507, 0, 4, 65506, 0, 3, 65506, 0, 3, 65505, 0, 3, 65504, 0, 4, 65505, 0, 5, 65506, 0, 3, 65503, 0, 4, 65503, 0, 4, 65504, 0, 5, 65504, 0, 5, 65505, 0, 5, 65503, 0, 4, 65513, 0, 4, 65512, 0, 5, 65512, 0, 5, 65513, 0, 5, 65514, 0, 4, 65514, 0, 65534, 65509, 0, 65534, 65508, 0, 65535, 65508, 0, 65535, 65507, 0, 65534, 65507, 0, 65535, 65506, 0, 65534, 65505, 0, 65533, 65505, 0, 65535, 65505, 0, 65534, 65506, 0, 65533, 65506, 0, 65534, 65504, 0, 65535, 65504, 0, 65535, 65503, 0, 65534, 65503, 0)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
-
-[node name="Enemies" type="Node3D" parent="."]
-
-[node name="mush_enemy" parent="Enemies" instance=ExtResource("8_ci3hs")]
-transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.31109, 2.49438, -36.9498)
-
-[node name="Blocks" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, -68)
 
 [node name="Pushable_Blocks" type="Node3D" parent="."]
 
@@ -100,10 +48,13 @@ transform = Transform3D(0.7652, 0, 0, 0, 0.7652, 0, 0, 0, 0.7652, -1.03596, 2.02
 [node name="Coins" type="Node3D" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource("5_yddm8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.15815, 3.56731, -39.4871)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.99464, 2.0849, -39.4871)
+
+[node name="Coin3" parent="Coins" instance=ExtResource("5_yddm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04777, 1.77791, -39.4871)
 
 [node name="Coin2" parent="Coins" instance=ExtResource("5_yddm8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.15815, 3.56731, -39.4871)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.73086, 2.69614, -40.6836)
 
 [node name="Kostili" type="Node3D" parent="."]
 
@@ -114,203 +65,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75793, 2.66443, -42.4777)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75793, 2.66443, -36.4777)
 
 [node name="Player" parent="." instance=ExtResource("2_yvjca")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 3.77684, 3.91437, -46.7181)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 3.77684, 3.91437, -46.3075)
 
-[node name="Bad" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.82, 5.345, 0)
+[node name="Houses" type="Node3D" parent="."]
 
-[node name="Bad-0" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("7_jxtk3")
-skeleton = NodePath("../..")
+[node name="Grass" type="Node3D" parent="."]
 
-[node name="Bad-1" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("8_gq62u")
-skeleton = NodePath("../..")
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_v5j03")
 
-[node name="Bad-2" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("9_pd145")
-skeleton = NodePath("../..")
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.0148592, 33.914, -17.1831)
+shadow_enabled = true
 
-[node name="Bad-3" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("10_0ewol")
-skeleton = NodePath("../..")
+[node name="Tree_Good" parent="." instance=ExtResource("7_rbflr")]
+transform = Transform3D(-4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, -29.9348, -33.9832, -67.6602)
 
-[node name="Bad-4" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("11_wekyb")
-skeleton = NodePath("../..")
+[node name="Enemies" type="Node3D" parent="."]
 
-[node name="Bad-5" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("12_37mo7")
-skeleton = NodePath("../..")
+[node name="mush_enemy" parent="Enemies" instance=ExtResource("8_ci3hs")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.846909, 1.28915, -46.0597)
 
-[node name="Bad-6" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("13_pgx84")
-skeleton = NodePath("../..")
-
-[node name="Bad-7" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("14_w7gfv")
-skeleton = NodePath("../..")
-
-[node name="Bad-8" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("15_jwdyg")
-skeleton = NodePath("../..")
-
-[node name="Bad-9" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("16_pb7ss")
-skeleton = NodePath("../..")
-
-[node name="Bad-10" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("17_y3ev6")
-skeleton = NodePath("../..")
-
-[node name="Bad-11" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("18_b8kv0")
-skeleton = NodePath("../..")
-
-[node name="Bad-12" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("19_dnfk8")
-skeleton = NodePath("../..")
-
-[node name="Bad-13" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("20_vv45t")
-skeleton = NodePath("../..")
-
-[node name="Bad-14" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("21_ydcm2")
-skeleton = NodePath("../..")
-
-[node name="Bad-15" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("22_frmbi")
-skeleton = NodePath("../..")
-
-[node name="Bad-16" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("23_ou42u")
-skeleton = NodePath("../..")
-
-[node name="Bad-17" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("24_51mt6")
-skeleton = NodePath("../..")
-
-[node name="Bad-18" type="MeshInstance3D" parent="Bad"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.344, 0, -66.2881)
-mesh = ExtResource("25_ssx8a")
-skeleton = NodePath("../..")
-
-[node name="Bad2" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.82, 5.345, 0)
-
-[node name="Good" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38, 0, 0)
-
-[node name="Good-0" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("26_e42kc")
-skeleton = NodePath("../../..")
-
-[node name="Good-1" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("27_ato5k")
-skeleton = NodePath("../../..")
-
-[node name="Good-2" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("28_jjord")
-skeleton = NodePath("../../..")
-
-[node name="Good-3" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("29_c1ue3")
-skeleton = NodePath("../../..")
-
-[node name="Good-4" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("30_1lehx")
-skeleton = NodePath("../../..")
-
-[node name="Good-5" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("31_xv1wf")
-skeleton = NodePath("../../..")
-
-[node name="Good-6" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("32_xwoo1")
-skeleton = NodePath("../../..")
-
-[node name="Good-7" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("33_ianus")
-skeleton = NodePath("../../..")
-
-[node name="Good-8" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("34_l7xdj")
-skeleton = NodePath("../../..")
-
-[node name="Good-9" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("35_ewdao")
-skeleton = NodePath("../../..")
-
-[node name="Good-10" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("36_4w2p2")
-skeleton = NodePath("../../..")
-
-[node name="Good-11" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("37_gihit")
-skeleton = NodePath("../../..")
-
-[node name="Good-12" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("38_3igep")
-skeleton = NodePath("../../..")
-
-[node name="Good-13" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("39_jnpd2")
-skeleton = NodePath("../../..")
-
-[node name="Good-14" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("40_0us44")
-skeleton = NodePath("../../..")
-
-[node name="Good-15" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("41_244b2")
-skeleton = NodePath("../../..")
-
-[node name="Good-16" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("42_3bngm")
-skeleton = NodePath("../../..")
-
-[node name="Good-17" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("43_rwvvb")
-skeleton = NodePath("../../..")
-
-[node name="Good-18" type="MeshInstance3D" parent="Good"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3.70176, -65.2847)
-mesh = ExtResource("44_5e4m4")
-skeleton = NodePath("../../..")
+[node name="mush_enemy2" parent="Enemies" instance=ExtResource("8_ci3hs")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 2.69424, 1.32762, -42.0359)
