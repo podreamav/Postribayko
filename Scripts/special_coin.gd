@@ -15,7 +15,7 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	if body.has_method("player"):
+	if body.has_method("apply_push"):
 		queue_free()
 		Global.score += 1
 		queue_free()

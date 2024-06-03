@@ -55,9 +55,9 @@ func _on_detection_area_body_exited(body):
 
 func _on_hitbox_area_entered(area):
 	var damage
-	#if area.has_method("legs"):
-		#damage = 1
-		#take_damage(damage)
+	if area.has_method("legs"):
+		damage = 1
+		take_damage(damage)
 
 func take_damage(damage):
 	health = health - damage
@@ -66,6 +66,7 @@ func take_damage(damage):
 
 func death():
 	dead = true
+	
 	$hitbox/CollisionShape3D.disabled = true
 	$CollisionShape3D.call_deferred("set", "disabled", true)
 	$mush_giant/AnimationPlayer.play("death")

@@ -364,13 +364,14 @@ _data = {
 "death": SubResource("Animation_5defi")
 }
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_ahqoi"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_cdclb"]
+size = Vector3(0.950195, 0.797119, 0.712158)
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_1x776"]
-radius = 1.846
+[sub_resource type="SphereShape3D" id="SphereShape3D_nfde0"]
+radius = 0.819344
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n3lpp"]
-size = Vector3(10.7557, 3, 11.9507)
+size = Vector3(12, 4, 9.81921)
 
 [node name="mush_enemy" type="CharacterBody3D"]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
@@ -386,22 +387,22 @@ bones/0/name = "body"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 bones/0/enabled = true
-bones/0/position = Vector3(0, 0.1, 0)
+bones/0/position = Vector3(0, 0.12, 0)
 bones/0/rotation = Quaternion(0, 0, 0, 1)
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "l"
 bones/1/parent = 0
 bones/1/rest = Transform3D(1, -2.98023e-07, -1.50996e-07, -2.98023e-07, -1, 5.37435e-07, -1.50996e-07, -5.37435e-07, -1, 0.15, 0.0999999, 2.68718e-08)
 bones/1/enabled = true
-bones/1/position = Vector3(0.15, 0.0999999, 2.68718e-08)
-bones/1/rotation = Quaternion(1, -1.49012e-07, -7.54979e-08, -2.68718e-07)
+bones/1/position = Vector3(0.15, 0.0999999, -0.07)
+bones/1/rotation = Quaternion(0.953717, -1.19412e-07, -1.16812e-07, -0.300706)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "r"
 bones/2/parent = 0
 bones/2/rest = Transform3D(1, -2.98023e-07, -1.50996e-07, -2.98023e-07, -1, 5.37435e-07, -1.50996e-07, -5.37435e-07, -1, -0.15, 0.0999999, 2.68718e-08)
 bones/2/enabled = true
-bones/2/position = Vector3(-0.15, 0.0999999, 2.68718e-08)
-bones/2/rotation = Quaternion(1, -1.49012e-07, -7.54979e-08, -2.68718e-07)
+bones/2/position = Vector3(-0.15, 0.0999999, 0.09)
+bones/2/rotation = Quaternion(0.965926, -8.53133e-08, -1.88627e-07, 0.258819)
 bones/2/scale = Vector3(1, 1, 1)
 
 [node name="Untitled" type="MeshInstance3D" parent="mush_giant/Armature_001/Skeleton3D"]
@@ -422,20 +423,20 @@ libraries = {
 }
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.503501, 0)
-shape = SubResource("SphereShape3D_ahqoi")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0249023, 0.403863, -0.0487061)
+shape = SubResource("BoxShape3D_cdclb")
 
 [node name="hitbox" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.905656, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.820909, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox"]
 transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, 0)
-shape = SubResource("SphereShape3D_1x776")
+shape = SubResource("SphereShape3D_nfde0")
 
 [node name="detection_area" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="detection_area"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.877869, 1.50397, -1.47534)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.20871, -1.09039)
 shape = SubResource("BoxShape3D_n3lpp")
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
