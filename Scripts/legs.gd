@@ -13,3 +13,6 @@ func _process(delta):
 
 func legs():
 	pass
+
+func mush_giant():
+	pass

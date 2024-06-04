@@ -1,6 +1,20 @@
-[gd_scene load_steps=46 format=3 uid="uid://s6tmd47tvd0r"]
+[gd_scene load_steps=60 format=3 uid="uid://s6tmd47tvd0r"]
 
 [ext_resource type="Texture2D" uid="uid://sewfq3ww6ynx" path="res://Assets/Models/Blocks/Tree2/tree_0.png" id="1_oebhc"]
+[ext_resource type="ArrayOccluder3D" uid="uid://dv8he4ike1jvb" path="res://Optimization/bg_trees.occ" id="2_q3vso"]
+[ext_resource type="ArrayOccluder3D" uid="uid://cw132ulxbthti" path="res://Optimization/bg_trees1.occ" id="3_qjwtl"]
+[ext_resource type="ArrayOccluder3D" uid="uid://deyfmvyww3ki0" path="res://Optimization/bg_trees3.occ" id="4_78pn1"]
+[ext_resource type="ArrayOccluder3D" uid="uid://tb1xewex03ky" path="res://Optimization/bg_trees4.occ" id="5_c6cos"]
+[ext_resource type="ArrayOccluder3D" uid="uid://dr4r2tetnm5hm" path="res://Optimization/bg_trees5.occ" id="6_oamk3"]
+[ext_resource type="ArrayOccluder3D" uid="uid://be2j72sla4egw" path="res://Optimization/bg_trees6.occ" id="7_t4qkf"]
+[ext_resource type="ArrayOccluder3D" uid="uid://61bsbfapg1i7" path="res://Optimization/bg_trees7.occ" id="8_3eqrf"]
+[ext_resource type="ArrayOccluder3D" uid="uid://bmf28ejhxa0sj" path="res://Optimization/bg_trees8.occ" id="9_6d236"]
+[ext_resource type="ArrayOccluder3D" uid="uid://cfixdvi2ugbi8" path="res://Optimization/bg_trees9.occ" id="10_jjp5t"]
+[ext_resource type="ArrayOccluder3D" uid="uid://nfmkpuowhfsg" path="res://Optimization/bg_trees10.occ" id="11_hsmrs"]
+[ext_resource type="ArrayOccluder3D" uid="uid://c4puqdrfhng4k" path="res://Optimization/bg_trees11.occ" id="12_kdnhk"]
+[ext_resource type="ArrayOccluder3D" uid="uid://crd1q6aae1dwc" path="res://Optimization/bg_trees12.occ" id="13_cqopq"]
+[ext_resource type="ArrayOccluder3D" uid="uid://dulv42iirf0gx" path="res://Optimization/bg_trees13.occ" id="14_v6y06"]
+[ext_resource type="ArrayOccluder3D" uid="uid://cjbjaitl4yhfy" path="res://Optimization/bg_trees14.occ" id="15_qvs3b"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lagu3"]
 resource_name = "Wood"
@@ -543,6 +557,9 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node2/Mesh/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_hox4g")
 
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node2/Mesh"]
+occluder = ExtResource("2_q3vso")
+
 [node name="Mesh2" type="MeshInstance3D" parent="tree/Node/Node2"]
 mesh = SubResource("ArrayMesh_eukgc")
 skeleton = NodePath("")
@@ -551,6 +568,9 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node2/Mesh2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ctwg7")
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node2/Mesh2"]
+occluder = ExtResource("3_qjwtl")
 
 [node name="Mesh3" type="MeshInstance3D" parent="tree/Node/Node2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -16, 0)
@@ -562,6 +582,9 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node2/Mesh3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_73pnd")
 
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node2/Mesh3"]
+occluder = ExtResource("4_78pn1")
+
 [node name="Mesh4" type="MeshInstance3D" parent="tree/Node/Node2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 0)
 mesh = SubResource("ArrayMesh_asuak")
@@ -571,6 +594,9 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node2/Mesh4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_bbcvp")
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node2/Mesh4"]
+occluder = ExtResource("5_c6cos")
 
 [node name="Mesh5" type="MeshInstance3D" parent="tree/Node/Node2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
@@ -582,6 +608,9 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node2/Mesh5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xp6jt")
 
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node2/Mesh5"]
+occluder = ExtResource("6_oamk3")
+
 [node name="Mesh6" type="MeshInstance3D" parent="tree/Node/Node2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 16)
 mesh = SubResource("ArrayMesh_1tpgh")
@@ -591,6 +620,9 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node2/Mesh6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5gao8")
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node2/Mesh6"]
+occluder = ExtResource("7_t4qkf")
 
 [node name="Mesh7" type="MeshInstance3D" parent="tree/Node/Node2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -16, 16)
@@ -602,6 +634,9 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node2/Mesh7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ne6hr")
 
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node2/Mesh7"]
+occluder = ExtResource("8_3eqrf")
+
 [node name="Mesh8" type="MeshInstance3D" parent="tree/Node/Node2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16, 16)
 mesh = SubResource("ArrayMesh_aiq2q")
@@ -611,6 +646,9 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node2/Mesh8/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_lcgxy")
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node2/Mesh8"]
+occluder = ExtResource("9_6d236")
 
 [node name="Node3" type="Node3D" parent="tree/Node"]
 
@@ -624,6 +662,9 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node3/Mesh9/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_hgk1p")
 
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node3/Mesh9"]
+occluder = ExtResource("10_jjp5t")
+
 [node name="Mesh10" type="MeshInstance3D" parent="tree/Node/Node3"]
 mesh = SubResource("ArrayMesh_ixk0v")
 skeleton = NodePath("")
@@ -632,6 +673,9 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node3/Mesh10/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_epd4b")
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node3/Mesh10"]
+occluder = ExtResource("11_hsmrs")
 
 [node name="Mesh11" type="MeshInstance3D" parent="tree/Node/Node3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
@@ -643,6 +687,9 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node3/Mesh11/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vw0ji")
 
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node3/Mesh11"]
+occluder = ExtResource("12_kdnhk")
+
 [node name="Mesh12" type="MeshInstance3D" parent="tree/Node/Node3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 16)
 mesh = SubResource("ArrayMesh_xngm3")
@@ -652,6 +699,9 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node3/Mesh12/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5fm2b")
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node3/Mesh12"]
+occluder = ExtResource("13_cqopq")
 
 [node name="Mesh13" type="MeshInstance3D" parent="tree/Node/Node3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -16, 16)
@@ -663,6 +713,9 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node3/Mesh13/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_t14n4")
 
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node3/Mesh13"]
+occluder = ExtResource("14_v6y06")
+
 [node name="Mesh14" type="MeshInstance3D" parent="tree/Node/Node3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16, 16)
 mesh = SubResource("ArrayMesh_fn4r3")
@@ -672,3 +725,6 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree/Node/Node3/Mesh14/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_8frht")
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="tree/Node/Node3/Mesh14"]
+occluder = ExtResource("15_qvs3b")

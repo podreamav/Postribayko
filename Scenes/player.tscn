@@ -2218,7 +2218,7 @@ bones/14/rotation = Quaternion(0.707107, 0.707107, 3.95127e-08, 4.74152e-08)
 bones/14/scale = Vector3(1, 1, 1)
 
 [node name="Untitled" type="BoneAttachment3D" parent="FlowerKnight/Armature/Skeleton3D"]
-transform = Transform3D(0.911753, 0.370834, 0.176606, -0.138526, 0.6824, -0.717733, -0.386675, 0.62993, 0.67355, 0.0277474, 1.83264, 1.47135)
+transform = Transform3D(0.911753, 0.370834, 0.176606, -0.138526, 0.682401, -0.717733, -0.386675, 0.62993, 0.67355, 0.0277473, 1.83264, 1.47135)
 bone_name = "Untitled"
 bone_idx = 14
 
@@ -2391,4 +2391,5 @@ max_db = -6.714
 stream = ExtResource("25_jpyl7")
 volume_db = -23.479
 
+[connection signal="area_entered" from="legs" to="." method="_on_legs_area_entered"]
 [connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]

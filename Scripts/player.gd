@@ -227,13 +227,31 @@ func death():
 	idle_sound.stop()
 	death_sound.play()
 	$hitbox/CollisionShape3D.disabled = true
-	#$CollisionShape3D.call_deferred("set", "disabled", true)
-	#$FlowerKnight/AnimationPlayer2.play("Death")
 	curAnim=DEATH
-	#await $FlowerKnight/AnimationPlayer2.animation_finished
-	
-	#$FlowerKnight/AnimationPlayer.play("Death")
-	#await $FlowerKnight/AnimationPlayer.animation_finished
 	#queue_free()
-	
 	#get_tree().change_scene_to_file("res://Scenes/intro.tscn")
+
+
+func _on_legs_area_entered(area):
+		if area.has_method("mush_giant"):
+			var mush_giant = area
+		# Calculate direction vector from mush to player
+			var direction = (global_transform.origin - mush_giant.global_transform.origin).normalized()
+
+		# Add push in both height and length
+			direction.y += push_height
+			direction.x += (push_length * sign(direction.x) ) /2
+			direction.z += (push_length * sign(direction.z) ) /2
+			# Apply push to player's velocity
+			velocity += (direction * (push_strength * 2) ) * 2
+		elif area.has_method("mush"):
+			var mush = area
+		# Calculate direction vector from mush to player
+			var direction = (global_transform.origin - mush.global_transform.origin).normalized()
+
+		# Add push in both height and length
+			direction.y += push_height
+			direction.x += push_length * sign(direction.x)
+			direction.z += push_length * sign(direction.z)
+			# Apply push to player's velocity
+			velocity += (direction * 0.7) * push_strength 

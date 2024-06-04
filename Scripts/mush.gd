@@ -1,6 +1,8 @@
 extends CharacterBody3D
 
 @onready var player = get_parent().get_parent().get_node("player")
+@onready var damage_sound = $Damage
+
 
 var speed = 25
 var health = 1
@@ -58,6 +60,7 @@ func _on_hitbox_area_entered(area):
 	if area.has_method("legs"):
 		damage = 1
 		take_damage(damage)
+		damage_sound.play()
 
 func take_damage(damage):
 	health = health - damage

@@ -4,7 +4,7 @@
 
 [resource]
 font = ExtResource("1_5hml2")
-font_size = 34
+font_size = 42
 font_color = Color(1, 0.380392, 0.380392, 1)
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)

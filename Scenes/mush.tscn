@@ -1,9 +1,11 @@
-[gd_scene load_steps=21 format=3 uid="uid://b34qx2j0ii333"]
+[gd_scene load_steps=23 format=3 uid="uid://b34qx2j0ii333"]
 
 [ext_resource type="Script" path="res://Scripts/mush.gd" id="1_3p8sl"]
 [ext_resource type="Texture2D" uid="uid://bag6pxqepn1be" path="res://Assets/Models/Characters/mush_giant_mush_giant-0.png" id="1_pplpe"]
 [ext_resource type="Texture2D" uid="uid://bbm0utsmfbvgs" path="res://Assets/Models/Characters/mush_giant_mush_giant-1.png" id="2_02seh"]
 [ext_resource type="Texture2D" uid="uid://cxbdrpemr3cv8" path="res://Assets/Models/Characters/mush_giant_mush_giant-2.png" id="3_tdhhx"]
+[ext_resource type="Script" path="res://Scripts/hitbox_small.gd" id="5_dl6u7"]
+[ext_resource type="AudioStream" uid="uid://b8eq1jglyvie3" path="res://Sounds/Sound_Effects/boing-spring-mouth-harp-04-20-13-4-103346.mp3" id="6_fmg3g"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_25sxx"]
 resource_name = "palette"
@@ -365,20 +367,20 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cdclb"]
-size = Vector3(0.950195, 0.797119, 0.712158)
+size = Vector3(0.950195, 0.970117, 0.712158)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_nfde0"]
-radius = 0.819344
+radius = 1.34609
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n3lpp"]
-size = Vector3(12, 4, 11.2368)
+size = Vector3(12.4031, 4, 12.6613)
 
 [node name="mush_enemy" type="CharacterBody3D"]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
 script = ExtResource("1_3p8sl")
 
 [node name="mush_giant" type="Node3D" parent="."]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0, 0, 0)
 
 [node name="Armature_001" type="Node3D" parent="mush_giant"]
 
@@ -423,11 +425,12 @@ libraries = {
 }
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0249023, 0.403863, -0.0487061)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0249023, 0.410573, -0.0487061)
 shape = SubResource("BoxShape3D_cdclb")
 
 [node name="hitbox" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.820909, 0)
+script = ExtResource("5_dl6u7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox"]
 transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, 0)
@@ -438,6 +441,12 @@ shape = SubResource("SphereShape3D_nfde0")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="detection_area"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.20871, -1.79916)
 shape = SubResource("BoxShape3D_n3lpp")
+
+[node name="Damage" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 1.01468, 0)
+stream = ExtResource("6_fmg3g")
+volume_db = -9.143
+max_db = -6.429
 
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
