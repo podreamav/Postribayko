@@ -373,7 +373,7 @@ size = Vector3(0.950195, 0.970117, 0.712158)
 radius = 1.34609
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n3lpp"]
-size = Vector3(12.4031, 4, 12.6613)
+size = Vector3(17.5334, 4, 16.5288)
 
 [node name="mush_giant" type="CharacterBody3D"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
@@ -439,7 +439,7 @@ shape = SubResource("SphereShape3D_nfde0")
 [node name="detection_area" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="detection_area"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0487061, 1.20871, -2.51142)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.346463, 1.20871, -3.94852)
 shape = SubResource("BoxShape3D_n3lpp")
 
 [node name="Damage" type="AudioStreamPlayer3D" parent="."]

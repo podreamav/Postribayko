@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://3goaceqe4mhr"]
+
+[ext_resource type="ArrayMesh" uid="uid://cwpaq0v72g5sp" path="res://Assets/Models/Blocks/Bush/bushvox.obj" id="1_gxstg"]
+[ext_resource type="Script" path="res://Scripts/bush.gd" id="1_xums6"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_k2f7w"]
+height = 2.10478
+radius = 0.931913
+
+[node name="Bush" type="Area3D"]
+script = ExtResource("1_xums6")
+
+[node name="Bushvox" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_gxstg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.123327, 1.03666, 0.55891)
+shape = SubResource("CylinderShape3D_k2f7w")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
