@@ -7,6 +7,7 @@ extends CharacterBody3D
 @onready var run_sound = $Sounds/Run
 @onready var idle_sound = $Idle
 @onready var death_sound = $Death
+@onready var leaves_sound = $Leaves
 
 
 
@@ -93,6 +94,7 @@ func _ready():
 	$Health/HalfHeart.visible = false
 	$Health/HalfHeart2.visible = false
 	$Health/HalfHeart3.visible = false
+	leaves_sound.play()
 	
 func _unhandled_input(event):
 	if Input.is_action_just_pressed("ui_cancel"):

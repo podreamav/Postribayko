@@ -23,4 +23,20 @@ mesh = ExtResource("3_s6kgj")
 transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 0.372761, 0, -0.226564)
 shape = SubResource("ConcavePolygonShape3D_vuwnr")
 
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0797781, 0.588569, -0.0342351)
+light_color = Color(1, 0.329412, 0.329412, 1)
+light_energy = 2.912
+distance_fade_enabled = true
+distance_fade_begin = 20.0
+omni_range = 0.145
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0847398, 0.588569, -0.0342351)
+light_color = Color(1, 0.329412, 0.329412, 1)
+light_energy = 2.912
+distance_fade_enabled = true
+distance_fade_begin = 20.0
+omni_range = 0.145
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
